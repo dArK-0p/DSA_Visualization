@@ -8,7 +8,8 @@ private:
 	void bubbleSort(char);
 	void selectionSort(char);
 	void insertionSort(char);
-	void mergeSort(char);
+	void mergeSort(int, int, char);
+	void mergeHelper(int, int, int, char);
 	void quickSort(char);
 public:
 	Array (int);
