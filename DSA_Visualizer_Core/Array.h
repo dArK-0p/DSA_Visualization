@@ -4,17 +4,22 @@ class Array {
 private:
 	int* arr;
 	int size;
+	bool sortAscending;
 	void generateRandom();
-	void bubbleSort(char);
-	void selectionSort(char);
-	void insertionSort(char);
-	void mergeSort(int, int, char);
-	void mergeHelper(int, int, int, char);
-	void quickSort(char);
+	void bubbleSort();
+	void selectionSort();
+	void insertionSort();
+	void mergeSort(int, int);
+	void quickSort(int, int, bool);
+	
 public:
 	Array (int);
 	~Array();
 
+	void mergeHelper(int, int, int);
+	int  lomutoPartition(int, int);
+	int  hoarePartition(int, int);
+	void randomizePivot(int, int, bool);
 	void printArray();
 	void sortArray(char, char);
 
