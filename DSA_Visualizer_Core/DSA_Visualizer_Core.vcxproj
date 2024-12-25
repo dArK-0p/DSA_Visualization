@@ -36,12 +36,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
+    <ClCompile Include="ArraySearch.cpp" />
+    <ClCompile Include="ArraySort.cpp" />
+    <ClCompile Include="ArraySortHelper.cpp" />
     <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
     <ClInclude Include="Helper.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="Logger.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2dee3998-cedc-4734-b5a1-b81ec21efbe5}</ProjectGuid>

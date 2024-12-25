@@ -17,26 +17,37 @@ int getLength() {
     }
 }
 
-void getSortTechniqueAndOrder(char* stord) {
+void getSortTechniqueAndOrder(char* sortTechniqueAndOrder) {
     int choice;
     cout << "Choose sorting technique:\n";
     cout << "1: Bubble Sort\n2: Selection Sort\n3: Insertion Sort\n";
     cout << "4: Merge Sort\n5: Quick Sort\n";
     cin >> choice;
     switch (choice) {
-    case 1: stord[0] = 'b'; break;
-    case 2: stord[0] = 's'; break;
-    case 3: stord[0] = 'i'; break;
-    case 4: stord[0] = 'm'; break;
-    case 5: stord[0] = 'q'; break;
-    default: stord[0] = 'b';
+    case 1: sortTechniqueAndOrder[0] = 'b'; break;
+    case 2: sortTechniqueAndOrder[0] = 's'; break;
+    case 3: sortTechniqueAndOrder[0] = 'i'; break;
+    case 4: sortTechniqueAndOrder[0] = 'm'; break;
+    case 5: sortTechniqueAndOrder[0] = 'q'; break;
+    default: sortTechniqueAndOrder[0] = 'b';
     }
 
     cout << "Choose order: 1: Ascending, 2: Descending\n";
     cin >> choice;
     switch (choice) {
-    case 1: stord[1] = 'a'; break;
-    case 2: stord[1] = 'd'; break;
-    default: stord[1] = 'a';
+    case 1: sortTechniqueAndOrder[1] = 'a'; break;
+    case 2: sortTechniqueAndOrder[1] = 'd'; break;
+    default: sortTechniqueAndOrder[1] = 'a';
     }
+}
+
+bool getSearchTechniqueAndValue(int* val) {
+    int choice;
+    cout << "Choose Search Technique:\n";
+    cout << "1. Linear Search\n2. Binary Search\n";
+    cin >> choice;
+
+    cout << "Enter element to Search: "; cin >> *val;
+
+    return (choice == 1);
 }
